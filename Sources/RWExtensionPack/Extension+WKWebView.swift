@@ -4,7 +4,10 @@
 //
 //  Created by Raditya Kurnianto on 5/26/20.
 //
+
+#if canImport(WebKit)
 import WebKit
+#endif
 
 public extension WKWebView {
     func inject(cookies: [HTTPCookie], url: URL, completion: @escaping ((WKWebView, URLRequest)->Void)) -> Void {
