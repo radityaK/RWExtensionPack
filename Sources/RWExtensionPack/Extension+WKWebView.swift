@@ -7,9 +7,7 @@
 
 #if canImport(WebKit)
 import WebKit
-#endif
 
-@available(iOS 11, *)
 public extension WKWebView {
     func inject(cookies: [HTTPCookie], url: URL, completion: @escaping ((WKWebView, URLRequest)->Void)) -> Void {
         if #available(iOS 11.0, *) {
@@ -82,3 +80,4 @@ public extension WKWebView {
         }
     }
 }
+#endif
