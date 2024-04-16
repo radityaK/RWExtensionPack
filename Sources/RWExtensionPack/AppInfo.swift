@@ -97,6 +97,7 @@ import UIKit
             default:                                        return identifier
             }
             #endif
+            return identifier
         }
 
         return mapToDevice(identifier: identifier)
